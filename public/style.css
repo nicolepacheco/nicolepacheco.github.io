@@ -1,0 +1,472 @@
+:root {
+    --background: #F9F1F0;
+    --primary: #FADCD9;
+    --secondary: #F8AFA6;
+    --text: #000000;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+main {
+    background: #FFD7D4;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+header {
+    align-self: stretch;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    background: #F8AFA6;
+    border-bottom: 2px black solid;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+
+    .Logo-Container {
+        align-self: stretch;
+        justify-content: space-between;
+        align-items: center;
+        display: inline-flex;
+    }
+
+    .NicolePacheco {
+        color: #1E2130;
+        font-size: 24px;
+        font-family: Poppins;
+        font-weight: 600;
+        line-height: 72px;
+        word-wrap: break-word;
+    }
+
+    .Content {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+        display: flex;
+    }
+
+    .Projects {
+        color: black;
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .Button {
+        padding: 16px;
+        background: #FADCD9;
+        border-radius: 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        display: flex;
+
+        .ContactMe {
+            color: #333333;
+            font-size: 16px;
+            font-family: Poppins;
+            font-weight: 500;
+            word-wrap: break-word;
+        }
+    }
+}
+
+.Introduction {
+    align-self: stretch;
+    background: #FADCD9;
+    justify-content: flex-end;
+    align-items: flex-start;
+    display: inline-flex;
+
+    .HeaderContent {
+        height: 731px;
+        flex: 1 1 0;
+        align-self: stretch;
+        padding: 32px;
+        background-image: url(./assets/images/header-background.png);
+        background-size: cover;
+        background-position: calc(100% - 10px) center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        display: inline-flex
+    }
+
+    .HeaderText {
+        align-self: stretch;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 60px;
+        display: flex
+    }
+
+    .Heading {
+        align-self: stretch;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 32px;
+        display: flex;
+    }
+
+    .HeyIMNicolePacheco {
+        width: 531px;
+        color: #1E2130;
+        font-size: 64px;
+        font-family: Poppins;
+        font-weight: 500;
+        line-height: 72px;
+        word-wrap: break-word;
+    }
+
+    .UxUiDesignerCreativeProblemSolver {
+        align-self: stretch;
+
+        span {
+            color: #323232;
+            font-size: 28px;
+            font-family: Inter;
+            font-weight: 500;
+            line-height: 32px;
+            word-wrap: break-word;
+
+            &.Italic {
+                font-style: italic;
+            }
+        }
+    }
+
+    .Button {
+        width: 222px;
+        height: 50px;
+        padding: 16px;
+        background: #FABAB2;
+        border-radius: 32px;
+        border-left: 1px black solid;
+        border-top: 1px black solid;
+        border-right: 1px black solid;
+        border-bottom: 3px black solid;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        display: inline-flex;
+
+        .WorkWithMe {
+            color: black;
+            font-size: 16px;
+            font-family: Poppins;
+            font-weight: 600;
+            word-wrap: break-word;
+        }
+    }
+
+    @media screen and (min-width: 1700px) {
+        .HeaderContent {
+            background-size: contain;
+        }
+    }
+}
+
+
+
+
+.Work {
+    align-self: stretch;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: #FFD3CE;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    display: flex;
+
+    .Portfolio {
+        align-self: stretch;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+        display: flex;
+
+        .Heading {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 16px;
+            display: flex;
+        }
+
+        .PortfoiloText {
+            text-align: center;
+            color: #36009D;
+            font-size: 24px;
+            font-family: Poppins;
+            font-weight: 500;
+            word-wrap: break-word;
+        }
+
+        .RecentWork {
+            color: #1E2130;
+            font-size: 48px;
+            font-family: Poppins;
+            font-weight: 600;
+            word-wrap: break-word;
+        }
+    }
+
+    .Cards {
+        align-self: stretch;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        display: flex;
+
+        .CardsRow {
+            align-self: stretch;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 32px;
+            display: inline-flex;
+            flex-wrap: wrap;
+
+            .Card {
+                flex: 1 1 0;
+                padding: 24px;
+                background: white;
+                border-radius: 29px;
+                border: 2px black solid;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 16px;
+                display: inline-flex;
+
+                .Image {
+                    align-self: stretch;
+                    border-radius: 16px;
+                    border: 1px black solid;
+                }
+
+                .Content {
+                    align-self: stretch;
+                    height: 98px;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    display: flex;
+
+                    .CardTitle {
+                        align-self: stretch;
+                        color: black;
+                        font-size: 24px;
+                        font-family: Poppins;
+                        font-weight: 700;
+                        word-wrap: break-word;
+                    }
+
+                    .CardDescription {
+                        align-self: stretch;
+                        color: #565656;
+                        font-size: 18px;
+                        font-family: Poppins;
+                        font-weight: 400;
+                        line-height: 30.60px;
+                        word-wrap: break-word;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Contact {
+    align-self: stretch;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 95px;
+    padding-bottom: 95px;
+    background: #F8AFA6;
+    border-bottom: 2px black solid;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+
+    .ContactContainer {
+        align-self: stretch;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 60px;
+        display: flex;
+
+        .GetInTouch {
+            height: 119px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 38px;
+            display: flex;
+
+            .Content {
+                width: 568px;
+                height: 119px;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+
+                .Content {
+                    align-self: stretch;
+                    height: 71px;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 26px;
+                    display: flex;
+
+                    .LetSCreateTogether {
+                        color: #1E2130;
+                        font-size: 48px;
+                        font-family: Poppins;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        line-height: 62.40px;
+                        word-wrap: break-word;
+                    }
+
+                    .PleaseSendAnEmailToContactMe {
+                        width: 494px;
+                        text-align: center;
+                        color: #565656;
+                        font-size: 16px;
+                        font-family: Poppins;
+                        font-weight: 400;
+                        word-wrap: break-word;
+                    }
+                }
+            }
+        }
+
+        .Information {
+            align-self: stretch;
+            justify-content: center;
+            align-items: center;
+            gap: 74px;
+            display: inline-flex;
+            flex-wrap: wrap;
+
+            .InformationCard {
+                padding: 24px;
+                background: white;
+                border-radius: 16px;
+                border: 1px black solid;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 12px;
+                display: flex;
+
+                .Icon {
+                    width: 91px;
+                    height: 79px;
+                    padding-left: 27px;
+                    padding-right: 27px;
+                    padding-top: 21px;
+                    padding-bottom: 21px;
+                    background: #FABAB2;
+                    border-radius: 6px;
+                    border: 1px black solid;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 10px;
+                    display: flex;
+
+                    .MyEmail {
+                        width: 36.47px;
+                        height: 36.47px;
+                        position: relative;
+                        background-image: url(https://via.placeholder.com/36x45);
+
+                        .Vector {
+                            width: 30.39px;
+                            height: 24.31px;
+                            left: 3.04px;
+                            top: 6.08px;
+                            position: absolute;
+                            background: white;
+                        }
+                    }
+                }
+
+                .Content {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 7px;
+                    display: inline-flex;
+
+                    .ContentTitle {
+                        align-self: stretch;
+                        color: #1E2130;
+                        font-size: 20px;
+                        font-family: Poppins;
+                        font-weight: 600;
+                        word-wrap: break-word;
+                    }
+
+                    .ContentDescription {
+                        width: 241px;
+                        color: #323232;
+                        font-size: 15px;
+                        font-family: Poppins;
+                        font-weight: 400;
+                        line-height: 19.50px;
+                        word-wrap: break-word;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Footer {
+    align-self: stretch;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+
+    .MadeBy {
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-family: DM Sans;
+        font-weight: 400;
+        line-height: 26px;
+        word-wrap: break-word;
+    }
+}
