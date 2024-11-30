@@ -470,6 +470,12 @@ header {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .Work {
+        padding: 16px;
+    }
+}
+
 .Contact {
     align-self: stretch;
     padding-left: 100px;
