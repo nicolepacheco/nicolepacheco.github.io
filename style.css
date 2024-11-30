@@ -216,6 +216,7 @@ header {
         gap: 10px;
         display: inline-flex;
         text-decoration: none;
+        box-sizing: border-box;
 
         .WorkWithMe {
             color: black;
