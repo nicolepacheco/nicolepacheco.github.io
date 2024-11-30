@@ -44,12 +44,23 @@ header {
     }
 
     .NicolePacheco {
-        color: #1E2130;
-        font-size: 24px;
-        font-family: Poppins;
-        font-weight: 600;
-        line-height: 72px;
-        word-wrap: break-word;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        span {
+            color: #1E2130;
+            font-size: 24px;
+            font-family: Poppins;
+            font-weight: 600;
+            line-height: 72px;
+            word-wrap: break-word;
+        }
     }
 
     .Content {
@@ -190,6 +201,7 @@ header {
     }
 
     .Button {
+        cursor: pointer;
         width: 222px;
         height: 50px;
         padding: 16px;
@@ -203,6 +215,7 @@ header {
         align-items: center;
         gap: 10px;
         display: inline-flex;
+        text-decoration: none;
 
         .WorkWithMe {
             color: black;
@@ -367,7 +380,7 @@ header {
         .CardsRow {
             align-self: stretch;
             justify-content: flex-start;
-            align-items: center;
+            align-items: stretch;
             gap: 32px;
             display: inline-flex;
             flex-wrap: wrap;
@@ -384,13 +397,25 @@ header {
                 gap: 16px;
                 display: inline-flex;
                 flex-basis: 400px;
+                position: relative;
+                text-decoration: none;
 
-                .Image {
-                    align-self: stretch;
-                    border-radius: 16px;
+                .ImageContainer {
                     border: 1px black solid;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    display: flex;
+                    height: 100%;
                     width: 100%;
+                    max-height: 400px;
+
+                    .Image {
+                        width: 100%;
+                        height: 400px;
+                        object-fit: cover;
+                    }
                 }
+
 
                 .Content {
                     align-self: stretch;
@@ -420,6 +445,27 @@ header {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Work {
+        .Cards {
+            .CardsRow {
+                .Card {
+                    .ImageContainer {
+                        max-height: unset;
+
+                        .Image {
+                            height: 100%;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
     }
 }
 
@@ -507,6 +553,7 @@ header {
                 align-items: center;
                 gap: 12px;
                 display: flex;
+                text-decoration: none;
 
                 .Icon {
                     width: 71px;
@@ -536,7 +583,6 @@ header {
                     word-break: break-all;
 
                     .ContentTitle {
-                        align-self: center;
                         color: #1E2130;
                         font-size: 20px;
                         font-family: Poppins;
